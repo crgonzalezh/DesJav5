@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.todo-list {
+    background: #fff;
+    padding: 20px;
+    width: 600px;
+}
+
+.todo-list h1 {
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+.task-input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.task-input-container input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.task-input-container button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-input-container button:hover {
+    background: #218838;
+}
+
+.task-summary-and-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-summary {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.task-list-container {
+    flex: 2;
+}
+
+.task-list-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.task-list-container table th, .task-list-container table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.task-list-container table th {
+    background-color: #f9f9f9;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.todo-list input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.todo-list input[type="checkbox"]:checked {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.todo-list input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: #fff;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    font-size: 14px;
+}
